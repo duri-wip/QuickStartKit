@@ -49,7 +49,7 @@ pyenv global 3.9.1   # 기본 Python 버전을 3.9.1로 설정
 
 ### Docker File
 
-'''
+```
 FROM python:3.8
 
 WORKDIR /app
@@ -81,4 +81,4 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 CMD ["python", "train_diabetes.py", "0.01", "0.75"]
-'''
+```
